@@ -17,8 +17,10 @@
   </div>
 
   <div class="field">
+    <textarea disabled>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAADkUlEQVQ4Ty2Uf0zUZRzHX8/3yx0CIaJISBzHrxNTt5KGSRBglAnNFGK7okRtSm1JUGgQrhhb0cY0Z4ZbzWQlimSYTl324xa0cKOZo7YEMhbqWnPA8cMvd9x97/t92t31+efZ59n7eT2/Pu+PkH6vRFFBsRAKaYYHqYAKJuFcDeYGoPwvEyAEYGgQ0kYjAWGMD8sZr85Sx2oMU6IqBgQC4DeDVFgcFSboATBNMA1QLeGN1QiMiXEm3BpJWWtBRCA+2V4m88u2sqZiB0RYQJ9Fjo9xruNTcguKSS3fClJHHxrg+94etAUfSmQsHkMhY+WD5Bfl8HHHcXa+1kRsejai65UqWdX8LiI5LXyS2Tu4jh5hbOAaW6p2sOKFF0H1c6f7GL/1uyjZUsG8tOJXY1iyLJnoh9Pp/6Ib9+QC5XVvIn7q6pGPV2wD1QDTw82zn3Gjrx99Wqeo3MlypzM0P9TRSrShs/LVelDiQIkGYQWLn7k/hjlzsJ09dbUI7e6sjIm/D6TG/PB1Th89xO6du3Cd/Irs3AJs26tBerjSUstiVSASM5kOKNhT01ld/ARiaTJ4prmwv5a87HSEDHgluhfp/peTbW2sKSzhkU2lfN3QwKMFhSQHr3xvis79NcQqkrR1eXi9XoYHXBTm5rBq3zGQXoba3mZmZAghpSbRFxg80o5nZoaNjQdAWLhYX8eGx/JZ/nw1+Dy4B/uIz7AjkjPA9DF//nNcvT2sa7+CzbaMPz98h9uDfQipz8n5sVE6D9ThSElgid2GoWlov4+yKC6RB0q3kfl0WQhKdCyIGJA+5K1rfNlUz6rm0zy0NpO/Pmph/KorCNSlnPiHm/2XEN4pjAiTSN8CI9+4SLI7yHruJdxS5fypTl5v2IdIcYAZwBi4zKmOw+S1nsHhSOHXD97CfeM6wjvhk4virKGHR/iDpQ8ejQt19eQXFZHgrEbOuels3ktCpEJpRSVu9ww/XryM7f4V5L93Anz3+KGlEXuUirja+53Me+YpsJigmGCYoOt8e7CN9es3EF/8JAgdOfoLP5/r5u7kFMISRVqqg5zSZxG2dOT4bU60tvLy7l2Irr01sqqxCZGUCBFWpCnCHg3oYY8qVlBkqBaDn8GCARYrCDVkNYxbDJ29xMjw3zjfaEIcr9wsK/fUELexBFOxIlRrqAMEmdIIrwtZGANVURHBDhCMkADk5CCd7x+icFMlWcWb+Q+bDocNP40BxQAAAABJRU5ErkJggg==</textarea>
+
     <%= f.label :avatar %>
-    <%= f.file_field :avatar %>
+    <%= f.text_area :avatar %>
     <%= f.hidden_field :avatar_cache %>
     <label>
       <%= f.check_box :remove_avatar %>
